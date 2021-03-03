@@ -1,0 +1,149 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 0.5em;
+}
+
+body {
+  background-image: url("/images/bog.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-color: #2a2421;
+}
+
+.left-margin {
+  margin-left: 2em;
+}
+
+.logo {
+  margin-top: 1em;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aske,
+.frederikke,
+.oscar {
+  height: 220px;
+  width: 150px;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  animation: backwards;
+}
+
+.music-video {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video {
+  height: 400px;
+}
+
+.rowone {
+  display: flex;
+}
+
+.btn,
+.btnn {
+  margin: 0.7em;
+  background-color: #2a2421;
+  padding: 0.6em;
+  border-radius: 1em;
+  color: #e3d5ca;
+  font-size: 20px;
+}
+
+.btnn {
+  height: 18px;
+  width: 100%;
+  line-height: 0.7em;
+}
+
+.btn-logo {
+  height: 15px;
+  margin-left: 0.5em;
+}
+
+.rowtwo {
+  margin-left: 0.5em;
+  margin-right: auto;
+}
+
+a {
+  color: #e3d5ca;
+}
+
+.rows {
+  display: flex;
+}
+
+.social {
+  margin-top: 16.5%;
+  height: 40px;
+  display: block;
+}
+
+.landing-page {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .profiles {
+    display: flex;
+  }
+
+  .aske,
+  .frederikke,
+  .oscar {
+    height: 110px;
+    width: auto;
+  }
+
+  .music-video {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video {
+    height: 190px;
+  }
+
+  .btn {
+    margin: 0.7em;
+    font-size: 15px;
+  }
+
+  .btn-logo {
+    height: 12px;
+    margin-left: 0.5em;
+  }
+
+  .btnn {
+    margin: 0.2em;
+    font-size: 15px;
+    width: 87%;
+    height: 12px;
+  }
+
+  .rows {
+    display: block;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .landing-page {
+    display: block;
+  }
+}
