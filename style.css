@@ -21,7 +21,7 @@ body {
 }
 
 .fade-in {
-  -webkit-animation: flicking 8s; /* Chrome, Safari, Opera */
+  -webkit-animation: flicking 8s;
   -webkit-animation-iteration-count: infinite;
   animation: flicking 8s infinity;
   animation-iteration-count: infinite;
@@ -31,13 +31,13 @@ body {
     opacity: 1;
   }
   25% {
-    opacity: 0.6;
+    opacity: 0.5;
   }
   50% {
     opacity: 1;
   }
   75% {
-    opacity: 0.6;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -47,6 +47,9 @@ body {
 .vid-container {
   background-color: rgba(227, 213, 202, 0.6);
   height: 530px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   border: 2px solid #554841;
 }
 
@@ -64,6 +67,7 @@ body {
 
 .social {
   margin-bottom: 1.5em;
+  margin-right: 2.5em;
 }
 
 .icon {
@@ -116,6 +120,7 @@ body {
 }
 
 .rowtwo {
+  display: flex;
   margin-left: 0.5em;
   margin-right: auto;
 }
@@ -126,7 +131,7 @@ body {
 }
 
 .up {
-  margin-top: -0.15em;
+  margin-top: -0.1em;
 }
 
 /* SECOND PAGE - BAND INTRO */
@@ -216,11 +221,118 @@ body {
 }
 
 @media (max-width: 767px) {
+  .vid-placement {
+    width: 75%;
+  }
+
+  .vid {
+    margin: 90px 0px;
+    height: 300px;
+  }
+
+  .btn-rows {
+    width: 70%;
+    margin-top: 0.5em;
+  }
+
+  .up {
+    margin-top: -0.1em;
+  }
+
+  .band-container {
+    height: 530px;
+    width: 95%;
+  }
+
+  .profiles {
+    display: flex;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .book-container {
+    width: 95%;
+  }
 }
-/*
-Sort #010101
-MÃ¸rkebrun #554841
-Brass #9D603B
-Beige #E3D5CA
-Hvid #FFFFFF
-*/
+@media (max-width: 375px) {
+  .social {
+    margin-right: 1em;
+  }
+
+  .vid-container {
+    height: 420px;
+  }
+
+  .vid-placement {
+    width: 95%;
+  }
+
+  .vid {
+    margin: 90px 0px;
+    height: 175px;
+  }
+
+  .btn-rows {
+    width: 75%;
+    margin-top: -5.7em;
+  }
+
+  .rowone {
+    display: block;
+  }
+
+  .rowtwo {
+    display: block;
+  }
+
+  .btn {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .up {
+    margin-top: -0.1em;
+  }
+
+  .band-container {
+    height: 800px;
+    width: 95%;
+  }
+
+  .h1-logo {
+    height: 70px;
+    margin: 0;
+  }
+
+  .profiles {
+    display: block;
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aske,
+  .frederikke,
+  .oscar {
+    margin: 2em;
+    margin-top: -1.5em;
+    height: 220px;
+  }
+
+  .img-description {
+    height: 200px;
+    width: 125px;
+    font-size: 12px;
+    line-height: 2em;
+    text-align: center;
+    top: -3em;
+    bottom: 0;
+    left: 2.65em;
+    right: 0;
+  }
+
+  .book-container {
+    width: 95%;
+  }
+}
