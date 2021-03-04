@@ -8,6 +8,7 @@
         <meta name="keywords" content="The Trio, Danish Cover Band, Landing Page">
         <meta name="author" content="Besmira Ahmedi, Chaima Amrhar & Ahmad Bahonar jr.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
         <link rel="animation" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="stylesheet" href="style.css">
         <title>The Trio</title>
@@ -17,15 +18,19 @@
         <main class="landing-page">
 
             <div class="title">
-                <img class="logo" src="./images/logo.png" alt="logo">
-                <p class="logo-text">I'm Like a Bird Official Music Video by</p>
+                <img class="logo fade-in" src="./images/logo.png" alt="logo">
+            </div>
+
+            <div class="social">
+                <a href="#" title="facebook"><img class="icon" src="./images/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/thetriodk/?hl=en" title="instagram"><img class="icon" src="./images/instagram.png" alt="instagram"></a>
             </div>
 
             <div class="vid-container">
                 <div class="vid-container-mid">
                     <div class="vid-placement">
-                        <video class="vid" controls="controls">
-                            <source src="./images/Bird.mp4" type="video/mp4" />
+                        <video class="vid" poster="./images/placeholder.jpg" controls="controls">
+                            <source src="./images/bird.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
@@ -33,51 +38,62 @@
                 <div class="btn-rows">
                     <div class="rowone">
                         <div class="btn">
-                            <a>Play on <img class="btn-logo" src="#" alt=""></a>
+                            <a>Play on <img class="btn-logo shine" src="./images/spotify.png" alt="spotify"></a>
                         </div>
                         <div class="btn">
-                            <a>Play on <img class="btn-logo" src="#" alt=""></a>      
+                            <a>Play on <img class="btn-logo shine" src="./images/apple-music.png" alt="apple"></a>      
                         </div>
                         <div class="btn">
-                            <a>Play on <img class="btn-logo" src="#" alt=""></a>   
+                            <a>Play on <img class="btn-logo shine" src="./images/youtube.png" alt="youtube"></a>   
                         </div>
                     </div>
 
                     <div class="rowtwo">
-                        <div class="btn">
-                            <a href="#"> Book hos email</a>
+                        <div class="btn up">
+                            <a href="#booking"> Book Us<img class="book btn-logo shine" src="./images/calender.png" alt="calender"></a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-            <div class="social">
-                <div class="social">
-                    <a href="#" title="facebook"><img class="social" src="./images/FacebookLogo.png" alt="facebook"></a>
-                    <a href="#" title="instagram"><img class="social" src="./images/InstagramLogo.png" alt="instagram"></a>
-                </div>
-            </div>
-
         </main>
+        
+        <br>
+        <br>
+        <br>      
 
-        <section class="band-introduction">
+        <section class="band-container">
+            <h1 class="band-intro"><img class="h1-logo" src="./images/logo.png" alt="logo"></h1>
             <div class="profiles">
-                <div class="left-margin">
-                    <img class="aske" src="#" alt="Aske">
+                <div class="bio">
+                    <img class="aske" src="./images/aske.jpg" alt="Aske">
+                    <p class="img-description"> <br><br><br> Aske Grieger <br>Singer, bassplayer</p>
                 </div>
-                <div class="left-margin">
-                    <img class="frederikke" src="#" alt="Frederikke">
+                <div class="bio">
+                    <img class="frederikke" src="./images/frederikke.jpg" alt="Frederikke">
+                    <p class="img-description"> <br><br><br> Frederikke Vedel <br>Singer, songwriter</p>
                 </div>
-                <div class="left-margin">
-                    <img class="oscar" src="#" alt="Oscar">
+                <div class="bio">
+                    <img class="oscar" src="./images/oscar.jpg" alt="Oscar">
+                    <p class="img-description"> <br><br><br> Oscar Elmholt <br>Singer, songwriter, producer, guitarplayer</p>
                 </div>
             </div>
         </section>
 
-        
+        <br>
+        <br>
+        <br>
+
+        <section id="booking">
+            <div class="book-container">
+                <h1 class="book-intro">Booking Information</h1>
+                <p>Book us via the following methods <br> E-Mail: <br> Phone:</p>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br> 
+
     </body>
 
 </html>

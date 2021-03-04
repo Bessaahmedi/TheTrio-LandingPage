@@ -1,25 +1,53 @@
 * {
   list-style: none;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 0.5em;
+  font-family: "Playfair Display";
+  line-height: 1em;
 }
 
 body {
-  background-color: #ffffff;
+  background-image: url("./images/background-contrast.jpg");
+  background-size: cover;
 }
 
+/* FIRST PAGE - MUSIC VIDEO */
+
 .logo {
-  margin-top: 3em;
+  margin-top: 2em;
   height: 130px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.fade-in {
+  -webkit-animation: flicking 8s; /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite;
+  animation: flicking 8s infinity;
+  animation-iteration-count: infinite;
+}
+@keyframes flicking {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .vid-container {
-  background-color: #e3d5ca;
-  height: 500px;
+  background-color: rgba(227, 213, 202, 0.6);
+  height: 530px;
+  border: 2px solid #554841;
 }
 
 .vid-placement {
@@ -29,21 +57,62 @@ body {
 }
 
 .vid {
-  margin: 50px;
+  margin: 60px;
   height: 400px;
+  border: 5px solid #554841;
+}
+
+.social {
+  margin-bottom: 1.5em;
+}
+
+.icon {
+  float: right;
+  height: 40px;
+  background-color: #ffffff;
+  padding: 0.2em;
+  border-radius: 0.5em;
+  color: #554841;
+  border: 2px solid #554841;
+  margin-right: 0.5em;
+}
+
+.display-flex {
+  display: flex;
 }
 
 .btn a {
   margin: 0.7em;
-  background-color: #554841;
+  background-color: #ffffff;
   padding: 0.6em;
   border-radius: 1em;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #554841;
+  border: 2px solid #554841;
+}
+
+.btn,
+.icon {
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover,
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.btn-rows {
+  display: flex;
+  width: 36%;
+  margin: 0 auto;
+  margin-top: -0.4em;
 }
 
 .rowone {
   display: flex;
+}
+
+.btn-logo {
+  height: 15px;
+  margin-bottom: -0.15em;
 }
 
 .rowtwo {
@@ -51,14 +120,99 @@ body {
   margin-right: auto;
 }
 
-.btn-rows {
-  display: flex;
+.book {
+  margin-left: 0.1em;
+  height: 18px;
 }
 
-.social {
-  margin-top: 16.5%;
-  height: 40px;
-  display: block;
+.up {
+  margin-top: -0.15em;
+}
+
+/* SECOND PAGE - BAND INTRO */
+
+.band-container {
+  background-color: rgba(85, 72, 65, 0.8);
+  height: 530px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #554841;
+  margin-top: 4.7em;
+}
+
+.band-intro {
+  text-align: center;
+  color: #e3d5ca;
+  margin: 1em;
+}
+.h1-logo {
+  height: 100px;
+  margin: 1em;
+}
+
+.profiles {
+  display: flex;
+  width: 61%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aske,
+.frederikke,
+.oscar {
+  margin: 1em;
+  margin-top: -1.5em;
+  height: 300px;
+}
+
+.bio {
+  display: flex;
+  position: relative;
+}
+
+.img-description {
+  height: 300px;
+  width: 170px;
+  color: #e3d5ca;
+  position: absolute;
+  padding: 1em;
+  line-height: 2em;
+  text-align: center;
+  top: -2.5em;
+  bottom: 0;
+  left: 1em;
+  right: 0;
+  background: rgba(85, 72, 65, 0.7);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.bio:hover .img-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* THIRD PAGE - BOOKING INFO */
+
+.book-container {
+  background-color: rgba(227, 213, 202, 0.6);
+  height: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #554841;
+  text-align: center;
+}
+
+.book-container p {
+  color: #554841;
+}
+
+.book-intro {
+  color: #554841;
 }
 
 @media (max-width: 767px) {
